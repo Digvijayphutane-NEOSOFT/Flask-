@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Delete Product</title>
+</head>
+<body>
+    <h1>Delete Product</h1>
+    <img src="{{ url_for('static', filename='images/' + product.photo) }}" alt="{{ product.name }}">
+
+    <p>Are you sure you want to delete the product "{{ product.name }}"?</p>
+    
+    <form method="post" action="{{ url_for('delete_product', product_id=product.id) }}" id="deleteProductForm">
+        <button type="submit">Confirm Delete</button>
+    </form>
+    
+    <a href="{{ url_for('index') }}" class="back-link">Cancel and Back to Product List</a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

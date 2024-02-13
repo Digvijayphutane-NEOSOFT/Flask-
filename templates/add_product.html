@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Add Product</h1>
+        <form method="post" action="{{ url_for('add_product') }}" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+    
+            <label for="category">Category:</label>
+            <select name="category" required>
+                <option value="electronics">Electronics</option>
+                <option value="Food">Food</option>
+                <option value="clothing">clothing</option>
+                <option value="Home Appliences">Home Appliences</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Grossary">Grossary</option>
+                <option value="Cosmatics">Cosmatics</option>
+                <option value="Pets">Pets</option>
+                <!-- Add more categories as needed -->
+            </select>
+    
+            <label for="price">Price:</label>
+            <input type="number" name="price" step="0.01" min="1" required>
+    
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" min="1" required>
+    
+            <label for="image">Product Image:</label>
+            <input type="file" name="image" accept="image/*" required>
+    
+            <button type="submit">Add Product</button>
+        </form>
+    <a href="{{ url_for('index') }}" class="back-link">Back to Product List</a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

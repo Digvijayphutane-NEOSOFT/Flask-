@@ -1,0 +1,19 @@
+2024-02-05 11:58:48,227 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:49,088 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:49,267 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:49,430 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:49,594 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:49,794 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:50,159 - DEBUG - Fetched 3 products for page 1
+2024-02-05 11:58:54,219 - DEBUG - Fetched 3 products for page 1
+2024-02-05 12:07:29,708 - DEBUG - Fetched 3 products for page 1
+2024-02-05 12:08:09,202 - DEBUG - Added product: chai
+2024-02-05 12:08:09,208 - DEBUG - Fetched 4 products for page 1
+2024-02-05 12:08:35,090 - DEBUG - Deleted product: chai
+2024-02-05 12:08:35,099 - DEBUG - Fetched 3 products for page 1
+2024-02-05 12:08:52,814 - DEBUG - Updated product: goggle
+2024-02-05 12:08:52,820 - DEBUG - Fetched 3 products for page 1
+2024-02-05 12:08:57,530 - ERROR - Error searching: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2024-02-05 12:09:04,489 - ERROR - Error searching: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2024-02-05 12:09:07,949 - ERROR - Error searching: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2024-02-05 12:09:14,065 - DEBUG - Fetched 3 products for page 1
